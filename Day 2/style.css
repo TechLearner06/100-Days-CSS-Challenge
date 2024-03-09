@@ -1,0 +1,180 @@
+:root {
+   --margin-between-lines: 20px;
+   --animation-delay:1s;
+   --hamburger-line-thickness:4px;
+  }
+
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background:#3faf82;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.line-1{
+    position: relative;
+    width:80px;
+    height:8px;
+    background:white;
+    border-radius:5px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+    margin:var(--margin-between-lines) 0 0 0;
+    animation: animate-line-1-rev var(--animation-delay);
+}
+
+
+.line-2{
+    width:80px;
+    height:8px;
+    background:white;
+    border-radius:5px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+    margin:var(--margin-between-lines) 0 0 0;
+    animation: animate-line-2-rev var(--animation-delay);
+}
+
+
+.line-3{
+    width:80px;
+    height:8px;
+    background:white;
+    border-radius:5px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+    margin:var(--margin-between-lines) 0 0 0;
+    animation: animate-line-3-rev var(--animation-delay);
+}
+
+
+
+/* First Animation */
+
+/* middle line disappears */
+
+@keyframes animate-line-2 {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+    opacity:0;
+   }
+}
+
+
+/*  The top line moves down to the same position as the middle line, and then rotates 45 degrees.*/
+
+@keyframes animate-line-1 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+    transform: translate3d(0,calc(var(--margin-between-lines) + var(--hamburger-line-thickness)*2),0);
+   }
+   100% {
+    transform: translate3d(0,calc(var(--margin-between-lines) + var(--hamburger-line-thickness)*2),0) rotate(45deg);
+   }
+}
+
+/* The bottom line moves up to the same position as the middle line, and then rotates -45 degrees.*/
+
+@keyframes animate-line-3 {
+    0% {
+       opacity: 1;
+     }
+     50% {
+     transform: translate3d(0,calc((var(--margin-between-lines) + var(--hamburger-line-thickness)*2)*(-1)),0);
+    }
+    100% {
+     transform: translate3d(0,calc((var(--margin-between-lines) + var(--hamburger-line-thickness)*2)*(-1)),0) rotate(-45deg);
+    }
+}
+
+
+
+.line-1.animate-line{
+    animation : animate-line-1 var(--animation-delay);
+    animation-fill-mode: forwards; 
+}
+
+.line-2.animate-line{
+    animation : animate-line-2 var(--animation-delay);
+    animation-fill-mode: forwards; 
+}
+
+.line-3.animate-line{
+    animation : animate-line-3 var(--animation-delay);
+    animation-fill-mode: forwards; 
+}
+
+
+
+
+/* second animation */
+
+/* middle line reappear */
+
+@keyframes animate-line-2-rev {
+    0% {
+    opacity:0;
+      transform: scale(1);
+    }
+    100% {
+    opacity:1;
+   }
+}
+
+/*  The top line is formed by the 45 degree inclined line rotating by -45 degrees, and then moving up.*/
+
+@keyframes animate-line-1-rev {
+    0% {
+      transform: translate3d(0,calc(var(--margin-between-lines) + var(--hamburger-line-thickness)*2),0) rotate(-45deg);
+    }
+    50% {
+    transform: translate3d(0,calc(var(--margin-between-lines) + var(--hamburger-line-thickness)*2),0) rotate(0deg);
+   }
+   100% {
+    transform: translate3d(0,0,0);
+   }
+}
+
+
+/* The bottom line is formed by the other inclined line rotating by 45 degrees, and then moving down.*/
+
+@keyframes animate-line-3-rev {
+    0% {
+       transform: translate3d(0,calc((var(--margin-between-lines) + var(--hamburger-line-thickness)*2)*(-1)),0) rotate(45deg);
+     }
+     50% {
+     transform: translate3d(0,calc((var(--margin-between-lines) + var(--hamburger-line-thickness)*2)*(-1)),0) rotate(0deg);
+    }
+    100% {
+     transform: translate3d(0,0,0);
+    }
+}
+
+
+/* added to ensure that the animation is not triggered while the class is present.*/
+
+.no-animate{
+    animation: none;
+}
