@@ -1,0 +1,137 @@
+
+.frame {
+    position: absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #272c34;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.circle {
+    position:relative;
+    height:180px;
+    width:180px;
+    background-color:lightskyblue;
+    border-radius:50%;
+    overflow:hidden;
+    opacity:0;
+    animation: darken 5s linear infinite
+}
+  
+.sun-container{
+    position:absolute;
+    width:200px;
+    height:200px;
+    top:20px;
+    left:-10px;
+    animation:sun-rotate 5s linear infinite reverse;
+}
+
+.sun{
+    position:absolute;
+    top:50%;
+    left:0;
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color:#ffef00;
+    box-shadow:0 0 10px #ffef000;
+}
+
+
+.triangle1{
+    position:absolute;
+    top:-10px;
+    height:100%;
+    width:100%;
+    background-color:#dedbdb;
+    clip-path:polygon(50% 50%,0 100%,75% 100%);
+}
+
+.triangle2{
+    position:absolute;
+    top:-10px;
+    width:100%;
+    height:100%;
+    background-color:white;
+    clip-path:polygon(50% 50%,100% 100%,75% 100%);
+}
+
+.shadow{
+    position:absolute;
+    height:50%;
+    width:53%;
+    top:70%;
+    left:23%;
+    background-color:#c0b25e;
+    clip-path:polygon(100% 0,0 0,100% 0);
+    z-index:1;
+    animation: shadow-animation 5s linear infinite;
+}
+
+.sand{
+    position:absolute;
+    height:30%;
+    width:100%;
+    background-color:#f0de75;
+    bottom:0;
+    outline:1px solid grey;
+}
+
+
+/* sun animation */
+
+@keyframes sun-rotate{
+    0%{
+        transform:rotate(360deg)
+    }
+}
+
+
+/* shadow animation */
+
+@keyframes shadow-animation{
+    0%{
+        clip-path:polygon(100% 0,0 0,100% 0);
+        }
+    25%{
+        clip-path:polygon(100% 0,0 0,100% 50%);
+    }
+    40%{
+        clip-path:polygon(100% 0,0 0,50% 75%);
+    }
+    60%{
+        clip-path:polygon(100% 0,5% 0, 10%);
+    }
+    65%{
+        clip-path:polygon(100% 0,5% 0,0 0);
+    }
+}
+
+/* darken */
+
+
+@keyframes darken{
+    0%{
+        opacity:0;
+    }
+    30%{
+        opacity:1;
+    }
+    70%{
+        opacity:0;
+    }
+}
