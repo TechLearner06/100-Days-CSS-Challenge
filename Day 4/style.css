@@ -1,0 +1,89 @@
+
+.frame {
+  position: absolute;
+  display:grid;
+  place-items:center;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #e56262;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   border-radius:10px;
+}
+
+.circle{
+	background:white;
+	border-radius:50%;
+	box-shadow:5px 10px 20px #0005;	
+	display:grid;
+	place-items:center;
+}
+
+
+.big{
+	width:100px;
+	height:100px;
+	background:white;
+	border-radius:50%;
+	box-shadow:5px 10px 20px #0005;	
+	animation:bigcircle-zoom 2s alternate infinite
+}
+
+
+.medium{
+	height:60px;
+	width:60px;
+	animation:mediumcircle-zoom 2s alternate infinite
+}
+
+
+.small{
+	height:30px;
+	width:30px;
+	animation:smallcircle-zoom 2s alternate infinite
+}
+
+
+/* animation */
+
+@keyframes smallcircle-zoom{
+	0%,70%{
+		transform:scale(0)
+	}
+	100%{
+		transform:scale(1)
+	}
+}
+
+
+
+@keyframes mediumcircle-zoom{
+	0%,
+	40%{
+		transform:scale(0)
+	}
+	100%{
+		transform:scale(1)
+	}
+}
+
+
+
+@keyframes bigcircle-zoom{
+	0%,
+	10%{
+		transform:scale(0)
+	}
+	100%{
+		transform:scale(1)
+	}
+}
