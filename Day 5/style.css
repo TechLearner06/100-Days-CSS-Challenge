@@ -1,0 +1,290 @@
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #008B8B;
+  color: #333;
+	border-radius:10px;
+	font-family:Arial;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container{
+	width:300px;
+	height:210px;
+	background-color:white;
+	border-radius:2px;
+	box-shadow:5px 10px 20px #0006; 
+}
+
+
+.header{
+	width:280px;
+	height:40px;
+	background-color:#e69900;
+	display:flex;
+	align-items:flex-end;
+	justify-content:space-between;
+	font-size:12px;
+	line-height:1.5;
+	padding:10px;
+	color:#fff
+}
+
+.right span{
+	color:white;
+	line-height:1;
+}
+
+
+.bold{
+	font-weight:550;
+	font-size:14px;
+}
+
+
+.left span{
+	color:white;
+	line-height:1;
+}
+
+
+.body-section{
+	padding:7px;
+}
+
+.tabs{
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
+	padding:6px;
+	
+}
+
+.tabs div{
+	margin-left:10px;
+	font-size:10px;
+}
+
+
+.red-view{
+	width:12px;
+	height:2px;
+	border-radius:50px;
+	background:red;
+}
+
+
+.blue-purchase{
+	width:12px;
+	height:2px;
+	border-radius:50px;
+	background:#7BA2FF;
+	margin-left:10px;
+}
+
+hr{
+	border:none;
+	height:0.5px;
+	background-color: rgba(200, 200, 200, 0.5);
+}
+
+
+margin-style{
+	margin:10px;
+}
+
+.stats{
+	position:relative;
+	width:260px;
+	height:80px;
+	margin:0 auto;
+}
+
+
+.stats .line-1{
+	position:absolute;
+	background:#f2f2f2;
+	top:5px;
+	left:0;
+	right:0;
+	height:1px;
+}
+
+.stats .line-2{
+	position:absolute;
+	background:#f2f2f2;
+	top:40px;
+	left:0;
+	right:0;
+	height:1px;
+}
+
+.stats .line-3{
+	position:absolute;
+	background:#f2f2f2;
+	left:0;
+	right:0;
+	height:1px;
+	bottom:0px;
+}
+
+
+.data svg{
+	position:absolute;
+	top:0;
+	left:0;
+  right:0;
+	bottom:0;
+}
+
+
+.data polyline{
+	fill:none;
+	stroke-width:2;
+	stroke-linecap:round;
+}
+
+.red polyline{
+	stroke:red;
+}
+
+
+.blue polyline{
+	stroke: #7BA2FF;
+}
+
+
+.number{
+	position:absolute;
+	bottom:13px;
+	left:50%;
+	-webkit-transform: translate3d(-50%, 10px, 0);
+  transform: translate3d(-50%, 10px, 0);
+	background:white;
+	padding: 8px 6px;
+  visibility: hidden;
+	
+}
+
+
+[class^="point-"] {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+[class^="point-"]:hover .number {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+}
+
+.data.red [class^="point-"], .data.red .number, .data.red .number::after {
+  background: red;
+}
+
+
+.data.red .point-1 {
+  left: 7px;
+  top: 43px;
+}
+
+.data.red .point-2 {
+  left: 48px;
+  top: 9px;
+}
+
+
+.data.red .point-3 {
+  left: 88px;
+  top: 20px;
+}
+
+.data.red .point-4 {
+  left: 128px;
+  top: 8px;
+}
+
+.data.red .point-5 {
+  left: 169px;
+  top: 35px;
+}
+
+.data.red .point-6 {
+  left: 209px;
+  top: 45px;
+}
+
+.data.red .point-7 {
+  left: 249px;
+  top: 16px;
+}
+
+
+.data.blue [class^="point-"], .data.blue .number, .data.blue .number::after {
+  background: #7BA2FF;
+}
+
+.data.blue .point-1 {
+  left: 7px;
+  top: 58px;
+}
+
+.data.blue .point-2 {
+  left: 48px;
+  top: 47px;
+}
+
+.data.blue .point-3 {
+  left: 88px;
+  top: 62px;
+}
+
+.data.blue .point-4 {
+  left: 128px;
+  top: 52px;
+}
+
+.data.blue .point-5 {
+  left: 169px;
+  top: 58px;
+}
+
+.data.blue .point-6 {
+  left: 209px;
+  top: 71px;
+}
+
+.data.blue .point-7 {
+  left: 249px;
+  top: 61px;
+}
+
+
+.weeks span{
+	color:grey;
+	font-size:9px;
+	margin-left:17px;
+}
+
+
+
