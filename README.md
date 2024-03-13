@@ -13,7 +13,7 @@ Resources:
 
 
 Outputs  
-********
+
 
 Day 1 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%201/day1.html
 
