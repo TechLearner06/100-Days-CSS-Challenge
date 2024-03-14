@@ -12,6 +12,9 @@ Resources:
 [Official 100 Days CSS Challenge Website](https://100dayscss.com/): Access the daily CSS challenges and additional resources to support your learning journey.
 
 
+Outputs  
+
+
 Day 1 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%201/day1.html
 
 Day 2 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%202/day2.html
@@ -19,3 +22,5 @@ Day 2 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%202/day2.html
 Day 3 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%203/day3.html
 
 Day 4 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%204/index.html
+
+Day 5 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%205/day5.html
