@@ -26,3 +26,5 @@ Day 4 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%204/index.htm
 Day 5 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%205/day5.html
 
 Day 6 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%206/day6.html
+
+Day 7 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%207/day7.html
