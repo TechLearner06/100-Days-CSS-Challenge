@@ -29,4 +29,4 @@ Day 6 - https://techlearner06.github.io/HTML-CSS-Learning/Day%206/day6.html
 
 Day 7 - https://techlearner06.github.io/HTML-CSS-Learning/Day%207/day7.html
 
-facebook login page design - https://techlearner06.github.io/HTML-CSS-Learning/facebook login page/fbpage.html
+facebook login page design - https://techlearner06.github.io/HTML-CSS-Learning/facebook%2login%2page/fbpage.html
