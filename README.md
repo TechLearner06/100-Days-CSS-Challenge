@@ -15,16 +15,18 @@ Resources:
 
 Outputs  
 
-Day 1 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%201/day1.html
+Day 1 - https://techlearner06.github.io/HTML-CSS-Learning/Day%201/day1.html
 
-Day 2 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%202/day2.html
+Day 2 - https://techlearner06.github.io/HTML-CSS-Learning/Day%202/day2.html
 
-Day 3 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%203/day3.html
+Day 3 - https://techlearner06.github.io/HTML-CSS-Learning/Day%203/day3.html
 
-Day 4 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%204/index.html
+Day 4 - https://techlearner06.github.io/HTML-CSS-Learning/Day%204/index.html
 
-Day 5 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%205/day5.html
+Day 5 - https://techlearner06.github.io/HTML-CSS-Learning/Day%205/day5.html
 
-Day 6 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%206/day6.html
+Day 6 - https://techlearner06.github.io/HTML-CSS-Learning/Day%206/day6.html
 
-Day 7 - https://techlearner06.github.io/100-Days-CSS-Challenge/Day%207/day7.html
+Day 7 - https://techlearner06.github.io/HTML-CSS-Learning/Day%207/day7.html
+
+facebook login page design - https://techlearner06.github.io/HTML-CSS-Learning/facebook login page/fbpage.html
